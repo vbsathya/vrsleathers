@@ -1,0 +1,48 @@
+@media (min-width: 1200px)
+{
+    .container
+    {
+        max-width: 900px;
+    }
+}
+
+.inner-item
+{
+    text-align: center;
+}
+
+    .inner-item img
+    {
+        margin: 0 auto;
+    }
+
+body .modal-content
+{
+    /* new custom width */
+    width: 750px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -100px;
+}
+
+span.fb-text
+{
+    color: #446e9b;
+}
+
+    span.fb-text:hover
+    {
+        background-color: #446e9b;
+        color: white;
+    }
+
+.center-table
+{
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.fb-findus
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+}

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="vrsApp">
+<head>
+    <meta charset="utf-8">
+    <title>VRS Leathers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rotary eClub of Chennai">
+
+    <!-- Le styles -->
+    <link href="Styles/bootstrap/bootstrap-spacelab.css" rel="stylesheet">
+    <link href="Styles/main.css" rel="stylesheet">
+    <style type="text/css">
+        body
+        {
+            padding-top: 5px;
+        }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.png">
+    <script type="text/javascript">
+        function changeTheme(theme) {
+            head = document.getElementsByTagName('head')[0]
+            $("link[href*='bootstrap']").remove();
+
+            style = document.createElement('link');
+
+            style.href = 'Styles/bootstrap/bootstrap-' + theme + '.css';
+            style.rel = 'stylesheet';
+            head.appendChild(style);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--Header Section, contains Logo, Site Title, Login links and Navbar -->
+    <div class="container">
+
+        <div class="row hidden-xs">
+            <div class="col-xs-2">
+                <img src="images/newlogo.png" style="height: 80px; width: 150px">
+            </div>
+            <!--
+                <div class="col-xs-2">
+                    <img src="images/since19871.png" style="height: 50px; width: 120px">
+                </div>
+                -->
+            <div class="col-xs-7 text-center">
+                <h1 class="text-primary">V R S Leathers</h1>
+            </div>
+            
+            <div class="col-xs-2 pull-right">
+                <img class="pull-right" src="images/ISO_9001.jpg" style="height: 80px; width: 80px">
+            </div>
+        </div>
+
+        <!--Nav bar content-->
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".vrs-nav-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand visible-xs" href="#"><strong>V R S Leathers</strong></a>
+            </div>
+
+            <div class="navbar-collapse collapse vrs-nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/company-profile">Company Profile</a></li>
+                            <li><a href="#/board-of-directors">Management</a></li>
+                            <li><a href="#/awards">Awards and Certifications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#/finished-leather">Finished Leather</a></li>
+                    <li><a href="#/events">Events / Fairs</a></li>
+                    <li><a href="#/gallery">Gallery</a> </li>
+                    <li><a href="#/contact">Contact Us</a> </li>
+                    <!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="changeTheme('flatly')" href="#">Flatly</a></li>
+                            <li><a onclick="changeTheme('slate')" href="#">Slate</a></li>
+                            <li><a onclick="changeTheme('spacelab')" href="#">Spacelab</a></li>
+                            <li><a onclick="changeTheme('cerulean')" href="#">Cerulean</a></li>
+                            <li><a onclick="changeTheme('amelia')" href="#">Amelia</a></li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </nav>
+    </div>
+
+    <div class="container" data-ng-view="">
+    </div>
+    <div class="container fb-findus">
+        <hr />
+        <table class="text-left">
+            <tr>
+                <td>Find us on <a href="https://www.facebook.com/vrsleathers" style="text-decoration: none">
+                                   <span class="fb-text"><strong>Facebook</strong></span></a>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <div class="fb-like" data-href="https://www.facebook.com/vrsleathers" data-colorscheme="light"
+                        data-layout="standard" data-action="like" data-show-faces="false" data-send="false">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/ContactUsCtrl.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</body>
+</html>
