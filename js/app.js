@@ -5,6 +5,7 @@ app.config(function ($routeProvider) {
     $routeProvider.when("/", { templateUrl: "views/home.html"});
     $routeProvider.when("/company-profile", { templateUrl: "views/companyprofile.html" });
     $routeProvider.when("/board-of-directors", { templateUrl: "views/board.html" });
+    $routeProvider.when("/env-policy", { templateUrl: "views/env-policy.html" });
     $routeProvider.when("/awards", { templateUrl: "views/awards.html" });
     $routeProvider.when("/finished-leather", { templateUrl: "views/finishedleather.html" });
     $routeProvider.when("/leather-products", { templateUrl: "views/leatherproducts.html" });
